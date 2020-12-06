@@ -1,5 +1,5 @@
 {
-  "name": "mandi-haase-portfolio",
+  "name": "like-magic",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -27,7 +27,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "d523682b-c509-4641-b19c-f1f5728bd6ec"
+    "uuid": "1ab31c23-bcf0-4188-a74f-6f4e895fcbb7"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",

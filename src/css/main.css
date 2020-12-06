@@ -229,8 +229,8 @@ Navbar
   align-items: center;
 }
 .nav-header img {
-  margin-top: 7rem;
-  margin-bottom: 0.375rem;
+  margin-top: 6rem;
+  margin-bottom: 0.875rem;
 }
 .toggle-btn {
   font-size: 2rem;
@@ -278,7 +278,7 @@ Navbar
 
 @media screen and (min-width: 992px) {
   .navbar {
-    background: transparent;
+    /* background: transparent; */
   }
 }
 /*
@@ -409,7 +409,7 @@ Hero
 .hero {
   margin-top: -5rem;
   padding-top: 5rem;
-  height: 100vh;
+  height: 105vh;
   background: var(--clr-primary-10);
   position: relative;
 }
@@ -427,6 +427,7 @@ Hero
 .hero-info {
   background: var(--clr-primary-10);
 }
+
 .hero-img {
   display: none;
 }
