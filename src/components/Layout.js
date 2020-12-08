@@ -1,16 +1,20 @@
+ 
 import React from "react"
-// import "../css/main.css"
-import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
-import Footer from "./Footer"
-const Layout = ({ children }) => {
+import Links from "../constants/links"
+import SocialLinks from "../constants/socialLinks"
+import { FaTimes } from "react-icons/fa"
+const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
-    <>
-      <Navbar />
-      {children}
-      <Footer />
-    </>
+    <aside className={`sidebar ${isOpen ? "show-sidebar" : ""} `}>
+      <button className="close-btn" onClick={toggleSidebar}>
+        <FaTimes />
+      </button>
+      <div className="side-container">
+        <Links styleClass={`${isOpen ? "sidebar-links" : ""}`} />
+        <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`} />
+      </div>
+    </aside>
   )
 }
 
-export default Layout
+export default Sidebar

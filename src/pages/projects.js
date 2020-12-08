@@ -7,11 +7,13 @@ import Projects from "../components/Projects"
 const ProjectsPage = ({
   data:{allStrapiProjects:{nodes:projects}}
 }) => {
-  return <layout>
+  return (
+   <Layout>
     <section className="projects-page">
       <Projects projects={projects} title="all projects" />
     </section>
-  </layout>
+  </Layout>
+  )
 }
 
 export const query = graphql`
