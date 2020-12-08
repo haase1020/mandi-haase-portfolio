@@ -5,11 +5,14 @@ import SEO from "../components/SEO"
 const contact = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      {/* <SEO title="Contact" /> */}
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
-          <form action="https://formspree.io/YOUR_ID" method="POST">
+          <form 
+           action="https://formspree.io/f/xbjpzgdw" method="POST" 
+         
+          >
             <div className="form-group">
               <input
                 type="text"
