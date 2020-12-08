@@ -6,30 +6,33 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
-
-export default ({data }) => {
+// import SEO from "../components/SEO"
+export default ({ data }) => {
   const {
-    allStrapiProjects:{nodes:projects},
-    allStrapiBlogs:{nodes:blogs}
+    allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
-  return <Layout>
-    <Hero />
-    <Services />
-    <Jobs />
-    <Projects projects={projects} title="featured projects" showLink/>
-    <Blogs blogs={blogs} title="blog" showLink/>
-  </Layout>
-}
 
+  return (
+    <Layout>
+      {/* <SEO title="Home" description="this is our home page" /> */}
+      <Hero />
+      <Services />
+      <Jobs />
+      <Projects projects={projects} title="featured projects" showLink />
+      <Blogs blogs={blogs} title="latest articles" showLink />
+    </Layout>
+  )
+}
 export const query = graphql`
   {
-    allStrapiProjects(filter: {featured: {eq: true}}) {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
-        description
         github
         id
-        url
+        description
         title
+        url
         image {
           childImageSharp {
             fluid {
@@ -43,12 +46,12 @@ export const query = graphql`
         }
       }
     }
-    allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
       nodes {
         slug
         content
-        date(formatString: "MMMM Do, YYYY")
         desc
+        date(formatString: "MMMM Do, YYYY")
         id
         title
         category
