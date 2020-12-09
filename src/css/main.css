@@ -445,7 +445,7 @@ Hero
   justify-items: flex-start;
 }
 .hero .btn {
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
 }
 
 @media screen and (min-width: 992px) {
@@ -1004,6 +1004,35 @@ Contact Page
   border-bottom-right-radius: var(--radius);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+}
+/*
+===============
+Susbscribe Form 
+===============
+*/
+.subscribe-form {
+  width: 90vw;
+  max-width: 35rem;
+  margin-top: 10rem;
+}
+.subscribe-form-control {
+  display: block;
+  width: 50%;
+  height: 3rem;
+  border: none;
+  margin-bottom: 1 rem;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  letter-spacing: var(--spacing);
+  padding: 1rem;
+}
+
+.subscribe-form-group {
+  display: flex;
+}
+.subscribe-btn {
+  height: 3rem;
+  margin-top: 0px;
 }
 /*
 ===============
