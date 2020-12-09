@@ -3,9 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
 
 module.exports = {
   siteMetadata: {
@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: process.env.MAILCHIMP_ENDPOINT, 
+          endpoint: "https://gmail.us7.list-manage.com/subscribe/post?u=67b96f12696da896ea81141b3&amp;id=33090e180a", 
       },
   },
     {
