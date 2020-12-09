@@ -2,8 +2,6 @@ import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
-// import SocialLinks from "../constants/socialLinks"
-// import Subscribe from './Subscribe'
 
 const query = graphql`
   {
@@ -32,7 +30,6 @@ const Hero = () => {
           <h1>I'm Mandi </h1>
           <h4>And I love it when my code works~ </h4>
           <Link to='/contact' className="btn">Say hi✨</Link>
-         {/* <Subscribe /> */}
         </div>
       </article>
       <Image fluid={fluid} className="hero-img" />

@@ -29,12 +29,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-          endpoint: "https://gmail.us7.list-manage.com/subscribe/post?u=67b96f12696da896ea81141b3&amp;id=33090e180a", 
-      },
-  },
-    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
